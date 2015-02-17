@@ -1,6 +1,6 @@
 {
   "name": "gulp-kill-semicolon",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Gulp plugin that finds accidental occurrence of colons & semicolons at the end of the string, within the quotation.",
   "main": "index.js",
   "scripts": {
