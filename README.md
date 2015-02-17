@@ -16,4 +16,16 @@ var o = {
 
 Did you spend hours on searching for what was wrong with your code? No IDE showed you that there was something wrong..
 
-Well, suffer no more, as here come gulp-kill-semicolon.
+Well, suffer no more, as here comes gulp-kill-semicolon.
+
+Usage example:
+```javascript
+gulp.task('sem', function(){
+	return gulp.src([
+					'./*.js' //it's up to you to pick files you want to analyze
+					 ])
+			.pipe(killSemicolon());
+});
+```
+
+*Please note that this plugin WILL NOT modify your files. It will ONLY log the warnings to your console*, indicating the lines of code in particular files that have either colon or semicolon at the end of the string declaration. Works with both single and double quotation.
