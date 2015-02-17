@@ -20,6 +20,9 @@ Well, suffer no more, as here comes gulp-kill-semicolon.
 
 Usage example:
 ```javascript
+var gulp = require('gulp');
+var killSemicolon = require('gulp-kill-semicolon').killSemicolon;
+
 gulp.task('sem', function(){
 	return gulp.src([
 					'./*.js' //it's up to you to pick files you want to analyze

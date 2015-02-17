@@ -1,6 +1,6 @@
 {
   "name": "gulp-kill-semicolon",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Gulp plugin that finds accidental occurrence of colons & semicolons at the end of the string, within the quotation.",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,11 @@
     "type": "git",
     "url": "https://github.com/belfz/gulp-kill-semicolon.git"
   },
+  "keywords": [
+    "gulp",
+    "semicolon",
+    "kill-semicolon"
+  ],
   "author": "Marcin Baraniecki <marcinbar1@gmail.com> (http://github.com/belfz)",
   "licenses": {
     "type": "MIT",

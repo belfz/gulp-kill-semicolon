@@ -1,0 +1,125 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . C:\Users\mbara\AppData\Roaming\npm-cache\3a52ce78-.lock
+11 verbose tar pack [ 'C:\\Users\\mbara\\AppData\\Roaming\\npm-cache\\gulp-kill-semicolon\\0.1.1\\package.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball C:\Users\mbara\AppData\Roaming\npm-cache\gulp-kill-semicolon\0.1.1\package.tgz
+13 verbose folder .
+14 info prepublish gulp-kill-semicolon@0.1.1
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. C:\Users\mbara\AppData\Roaming\npm-cache\1f1177db-tar.lock
+17 silly lockFile 8289c558-kill-semicolon-0-1-1-package-tgz tar://C:\Users\mbara\AppData\Roaming\npm-cache\gulp-kill-semicolon\0.1.1\package.tgz
+18 verbose lock tar://C:\Users\mbara\AppData\Roaming\npm-cache\gulp-kill-semicolon\0.1.1\package.tgz C:\Users\mbara\AppData\Roaming\npm-cache\8289c558-kill-semicolon-0-1-1-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 8289c558-kill-semicolon-0-1-1-package-tgz tar://C:\Users\mbara\AppData\Roaming\npm-cache\gulp-kill-semicolon\0.1.1\package.tgz
+22 silly lockFile 8289c558-kill-semicolon-0-1-1-package-tgz tar://C:\Users\mbara\AppData\Roaming\npm-cache\gulp-kill-semicolon\0.1.1\package.tgz
+23 silly lockFile 45b07ab7-ulp-kill-semicolon-0-1-1-package C:\Users\mbara\AppData\Roaming\npm-cache\gulp-kill-semicolon\0.1.1\package
+24 verbose lock C:\Users\mbara\AppData\Roaming\npm-cache\gulp-kill-semicolon\0.1.1\package C:\Users\mbara\AppData\Roaming\npm-cache\45b07ab7-ulp-kill-semicolon-0-1-1-package.lock
+25 silly lockFile 45b07ab7-ulp-kill-semicolon-0-1-1-package C:\Users\mbara\AppData\Roaming\npm-cache\gulp-kill-semicolon\0.1.1\package
+26 silly lockFile 45b07ab7-ulp-kill-semicolon-0-1-1-package C:\Users\mbara\AppData\Roaming\npm-cache\gulp-kill-semicolon\0.1.1\package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'gulp-kill-semicolon',
+29 silly publish   version: '0.1.1',
+29 silly publish   description: 'Gulp plugin that finds accidental occurrence of colons & semicolons at the end of the string, within the quotation.',
+29 silly publish   main: 'index.js',
+29 silly publish   scripts: { test: 'mocha test' },
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'https://github.com/belfz/gulp-kill-semicolon.git' },
+29 silly publish   author:
+29 silly publish    { name: 'Marcin Baraniecki',
+29 silly publish      email: 'marcinbar1@gmail.com',
+29 silly publish      url: 'http://github.com/belfz' },
+29 silly publish   licenses:
+29 silly publish    { type: 'MIT',
+29 silly publish      url: 'https://github.com/brentertz/scapegoat/blob/master/LICENSE-MIT' },
+29 silly publish   bugs: { url: 'https://github.com/belfz/gulp-kill-semicolon/issues' },
+29 silly publish   homepage: 'https://github.com/belfz/gulp-kill-semicolon',
+29 silly publish   dependencies:
+29 silly publish    { colors: '^1.0.3',
+29 silly publish      'gulp-util': '^3.0.0',
+29 silly publish      jshint: '^2.5.6',
+29 silly publish      lodash: '^3.0.1',
+29 silly publish      minimatch: '^2.0.1',
+29 silly publish      rcloader: '0.1.2',
+29 silly publish      through2: '~0.6.1' },
+29 silly publish   devDependencies:
+29 silly publish    { chai: '^2.0.0',
+29 silly publish      gulp: '^3.8.10',
+29 silly publish      mocha: '^2.1.0',
+29 silly publish      should: '^4.0.4' },
+29 silly publish   readme: '# gulp-kill-semicolon\r\n\r\n```npm install gulp-kill-semicolon```\r\n\r\nHow often did this happen to you?\r\n```javascript\r\nvar s = \'hello;\'\r\n```\r\nOr this?\r\n```javascript\r\nvar o = {\r\n\t\th: \'world,\'\r\n\t}\r\n```\r\n(*If you still didn\'t notice, then you might already have this problem somewhere else - it\'s either semicolon or colon accidentally included INSIDE the string - within the quotes!*)\r\n\r\nDid you spend hours on searching for what was wrong with your code? No IDE showed you that there was something wrong..\r\n\r\nWell, suffer no more, as here comes gulp-kill-semicolon.\r\n\r\nUsage example:\r\n```javascript\r\ngulp.task(\'sem\', function(){\r\n\treturn gulp.src([\r\n\t\t\t\t\t\'./*.js\' //it\'s up to you to pick files you want to analyze\r\n\t\t\t\t\t ])\r\n\t\t\t.pipe(killSemicolon());\r\n});\r\n```\r\n\r\n**Please note that this plugin WILL NOT modify your files. It will ONLY log the warnings to your console**, indicating the lines of code in particular files that have either colon or semicolon at the end of the string declaration. Works with both single and double quotation.',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: 'f72cc634a4eec9310331c727bdb3bb14f955e35f',
+29 silly publish   _id: 'gulp-kill-semicolon@0.1.1',
+29 silly publish   _shasum: 'eee3aea80cee1cfa390f1a996eccc917105e5b53',
+29 silly publish   _from: '.' }
+30 verbose request where is /gulp-kill-semicolon
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 2805d47a9d0cceb5
+33 verbose url raw /gulp-kill-semicolon
+34 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-kill-semicolon' ]
+35 verbose url resolved https://registry.npmjs.org/gulp-kill-semicolon
+36 verbose request where is https://registry.npmjs.org/gulp-kill-semicolon
+37 info trying registry request attempt 1 at 15:04:47
+38 http PUT https://registry.npmjs.org/gulp-kill-semicolon
+39 http 403 https://registry.npmjs.org/gulp-kill-semicolon
+40 verbose headers { date: 'Tue, 17 Feb 2015 14:04:48 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '4622',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-fra1234-FRA',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1424181887.733464,VS0,VE677',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden cannot modify pre-existing version: 0.1.1
+42 error old={"name":"gulp-kill-semicolon","version":"0.1.1","description":"Gulp plugin that finds accidental occurrence of colons & semicolons at the end of the string, within the quotation.","main":"index.js","scripts":{"test":"mocha test"},"repository":{"type":"git","url":"https://github.com/belfz/gulp-kill-semicolon.git"},"author":{"name":"Marcin Baraniecki","email":"marcinbar1@gmail.com","url":"http://github.com/belfz"},"licenses":{"type":"MIT","url":"https://github.com/brentertz/scapegoat/blob/master/LICENSE-MIT"},"bugs":{"url":"https://github.com/belfz/gulp-kill-semicolon/issues"},"homepage":"https://github.com/belfz/gulp-kill-semicolon","dependencies":{"colors":"^1.0.3","gulp-util":"^3.0.0","jshint":"^2.5.6","lodash":"^3.0.1","minimatch":"^2.0.1","rcloader":"0.1.2","through2":"~0.6.1"},"devDependencies":{"chai":"^2.0.0","gulp":"^3.8.10","mocha":"^2.1.0","should":"^4.0.4"},"gitHead":"f72cc634a4eec9310331c727bdb3bb14f955e35f","_id":"gulp-kill-semicolon@0.1.1","_shasum":"eee3aea80cee1cfa390f1a996eccc917105e5b53","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"belfz","email":"marcinbar1@gmail.com"},"maintainers":[{"name":"belfz","email":"marcinbar1@gmail.com"}],"dist":{"shasum":"eee3aea80cee1cfa390f1a996eccc917105e5b53","tarball":"http://registry.npmjs.org/gulp-kill-semicolon/-/gulp-kill-semicolon-0.1.1.tgz"}}
+42 error new={"name":"gulp-kill-semicolon","version":"0.1.1","description":"Gulp plugin that finds accidental occurrence of colons & semicolons at the end of the string, within the quotation.","main":"index.js","scripts":{"test":"mocha test"},"repository":{"type":"git","url":"https://github.com/belfz/gulp-kill-semicolon.git"},"author":{"name":"Marcin Baraniecki","email":"marcinbar1@gmail.com","url":"http://github.com/belfz"},"licenses":{"type":"MIT","url":"https://github.com/brentertz/scapegoat/blob/master/LICENSE-MIT"},"bugs":{"url":"https://github.com/belfz/gulp-kill-semicolon/issues"},"homepage":"https://github.com/belfz/gulp-kill-semicolon","dependencies":{"colors":"^1.0.3","gulp-util":"^3.0.0","jshint":"^2.5.6","lodash":"^3.0.1","minimatch":"^2.0.1","rcloader":"0.1.2","through2":"~0.6.1"},"devDependencies":{"chai":"^2.0.0","gulp":"^3.8.10","mocha":"^2.1.0","should":"^4.0.4"},"readme":"# gulp-kill-semicolon\u000d\u000a\u000d\u000a```npm install gulp-kill-semicolon```\u000d\u000a\u000d\u000aHow often did this happen to you?\u000d\u000a```javascript\u000d\u000avar s = 'hello;'\u000d\u000a```\u000d\u000aOr this?\u000d\u000a```javascript\u000d\u000avar o = {\u000d\u000a\u0009\u0009h: 'world,'\u000d\u000a\u0009}\u000d\u000a```\u000d\u000a(*If you still didn't notice, then you might already have this problem somewhere else - it's either semicolon or colon accidentally included INSIDE the string - within the quotes!*)\u000d\u000a\u000d\u000aDid you spend hours on searching for what was wrong with your code? No IDE showed you that there was something wrong..\u000d\u000a\u000d\u000aWell, suffer no more, as here comes gulp-kill-semicolon.\u000d\u000a\u000d\u000aUsage example:\u000d\u000a```javascript\u000d\u000agulp.task('sem', function(){\u000d\u000a\u0009return gulp.src([\u000d\u000a\u0009\u0009\u0009\u0009\u0009'./*.js' //it's up to you to pick files you want to analyze\u000d\u000a\u0009\u0009\u0009\u0009\u0009 ])\u000d\u000a\u0009\u0009\u0009.pipe(killSemicolon());\u000d\u000a});\u000d\u000a```\u000d\u000a\u000d\u000a**Please note that this plugin WILL NOT modify your files. It will ONLY log the warnings to your console**, indicating the lines of code in particular files that have either colon or semicolon at the end of the string declaration. Works with both single and double quotation.","readmeFilename":"README.md","gitHead":"f72cc634a4eec9310331c727bdb3bb14f955e35f","_id":"gulp-kill-semicolon@0.1.1","_shasum":"eee3aea80cee1cfa390f1a996eccc917105e5b53","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"belfz","email":"marcinbar1@gmail.com"},"maintainers":[{"name":"belfz","email":"marcinbar1@gmail.com"}],"dist":{"shasum":"eee3aea80cee1cfa390f1a996eccc917105e5b53","tarball":"http://registry.npmjs.org/gulp-kill-semicolon/-/gulp-kill-semicolon-0.1.1.tgz"}}: gulp-kill-semicolon
+42 error     at RegClient.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+42 error     at Request._callback (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+42 error     at Request.self.callback (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:944:16
+42 error     at process._tickCallback (node.js:442:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Windows_NT 6.1.7601
+45 error command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error cwd C:\Users\mbara\Desktop\js2\skarpety\node_modules\gulp-kill-semicolon
+47 error node -v v0.10.35
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
