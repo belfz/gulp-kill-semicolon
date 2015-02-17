@@ -12,7 +12,7 @@ var o = {
 		h: 'world,'
 	}
 ```
-(If you still didn't notice, then you might already have this problem somewhere else - it's either semicolon or colon accidentally included INSIDE the string - within the quotes!)
+(*If you still didn't notice, then you might already have this problem somewhere else - it's either semicolon or colon accidentally included INSIDE the string - within the quotes!*)
 
 Did you spend hours on searching for what was wrong with your code? No IDE showed you that there was something wrong..
 
@@ -28,4 +28,4 @@ gulp.task('sem', function(){
 });
 ```
 
-*Please note that this plugin WILL NOT modify your files. It will ONLY log the warnings to your console*, indicating the lines of code in particular files that have either colon or semicolon at the end of the string declaration. Works with both single and double quotation.
+**Please note that this plugin WILL NOT modify your files. It will ONLY log the warnings to your console**, indicating the lines of code in particular files that have either colon or semicolon at the end of the string declaration. Works with both single and double quotation.
